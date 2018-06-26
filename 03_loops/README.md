@@ -14,7 +14,7 @@ for name in student_names:
 Name -> Liza \
 Name -> George
 
-Here, we've made a list of "Student names", and a for loop that will print every name in the list one by one. You can read it as _"for every 'name' in 'student_names', print "Name -> " and their name"_. The "name" in the loop is a temporary variable that holds whatever value the loop is currently on. 
+Here, we've made a list of "Student names", and a *for* loop that will print every name in the list one by one. You can read it as _"for every 'name' in 'student_names', print "Name -> " and their name"_. The "name" in the loop is a temporary variable that holds whatever value the loop is currently on. 
 
 ### The _Range_ Function
 
@@ -27,7 +27,7 @@ The Range function returns a list that can be iterated. It has three parameters;
 * 3 parameters = `range(min.index value, max. index value, step)`
 
 *Note: whatever index number you enter *will not be included* in your final list. \
-Here's an example of a for loop that uses the range function:
+Here's an example of a *for* loop that uses the range function:
 
 ```python
 for index in range(0, 11, 2):
@@ -44,9 +44,8 @@ If you don't specify any lists, thr function will work on a list of all whole nu
 
 ### The *Break* keywords
 
-The Break keyword is a way to stop a *for* loop from executing when a certain condition is met, and will instead exit it.
-
-Say we were going through a list of 0 - 10, looking for 5. If we just used a for loop (like shown below), the loop would continue to run even after finding 5.
+The Break keyword is a way to stop a *for* loop from executing when a certain condition is met, and will instead exit it.\
+Say we were going through a list of 0 - 10, looking for 5. If we just used a *for* loop (like shown below), the loop would continue to run even after finding 5.
 ```python
 for index in range(11):
     if index == 5:
@@ -85,9 +84,8 @@ Found 5!
 
 ### The *Continue* keyword
 
-The Continue keyword is a way to skip a value in a list when a certain condition is met.
-
-Say we're still working with that list of 0-10, but this time, we want all the value to printed *except* 5. To do this, we would insert the *continue* keyword as shown below. This wll make the computer skip whatever code is after the keyword in the loop, and move on to the next index.
+The Continue keyword is a way to skip a value in a list when a certain condition is met.\
+Say we're still working with that list of 0-10, but this time, we want all the values to printed *except* 5. To do this, we would insert the *continue* keyword as shown below. This wll make the computer skip whatever code is after the keyword, and move on to the next index.
 
 ```python
 for index in range(11):
