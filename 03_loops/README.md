@@ -2,7 +2,7 @@
 
 A loop is a way to call on items in a list one at a time
 
-##_For_ loops
+## _For_ loops
 
 ```python
 student_names = ['Ann', 'Liza', 'George']
@@ -16,7 +16,7 @@ Name -> George
 
 Here, we've made a list of "Student names", and a for loop that will print every name in the list one by one. You can read it as _"for every 'name' in 'student_names', print "Name -> " and their name"_. The "name" in the loop is a temporary variable that holds whatever value the loop is currently on. 
 
-###The _Range_ Function
+### The _Range_ Function
 
 By default, a loop with start in Index value 0 of a list, go till the end, an dhave a step/increment of 1. You can change this with the range function.
 \
