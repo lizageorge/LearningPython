@@ -42,6 +42,70 @@ for index in range(0, 11, 2):
 
 If you don't specify any lists, thr function will work on a list of all whole numbers and 0. 
 
-### Breaks
+### The *Break* keywords
 
+The Break keyword is a way to stop a *for* loop from executing when a certain condition is met, and will instead exit it.
 
+Say we were going through a list of 0 - 10, looking for 5. If we just used a for loop (like shown below), the loop would continue to run even after finding 5.
+```python
+for index in range(11):
+    if index == 5:
+        print('Found 5!')
+    print(f'{index}, searching for 5.')
+```
+>0, searching for 5.\
+1, searching for 5.\
+2, searching for 5.\
+3, searching for 5.\
+4, searching for 5.\
+Found 5!\
+5, searching for 5.\
+6, searching for 5.\
+7, searching for 5.\
+8, searching for 5.\
+9, searching for 5.\
+10, searching for 5.
+
+To be more efficient, we can insert the *break* keyword. This will make the computer leave the *for* loop entirely, and continue on to whatever code is after it.
+
+```python
+for index in range(11):
+    if index == 5:
+        print('Found 5!')
+        break
+    print(f"{index}, searching for 5.")
+```
+
+>0, searching for 5.\
+1, searching for 5.\
+2, searching for 5.\
+3, searching for 5.\
+4, searching for 5.\
+Found 5!
+
+### The *Continue* keyword
+
+The Continue keyword is a way to skip a value in a list when a certain condition is met.
+
+Say we're still working with that list of 0-10, but this time, we want all the value to printed *except* 5. To do this, we would insert the *continue* keyword as shown below. This wll make the computer skip whatever code is after the keyword in the loop, and move on to the next index.
+
+```python
+for index in range(11):
+    if index == 5:
+        continue
+    print(index)
+```
+
+>0\
+1\
+2\
+3\
+4\
+6\
+7\
+8\
+9\
+10\
+11
+
+Now we have a list of 0-10, skipping 5!
