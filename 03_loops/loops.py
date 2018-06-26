@@ -29,3 +29,15 @@ for index in range(11):         # using the continue keyword
 
 print("\n----------\n")
 
+x = 0
+while x < 10:                   # example of a while loop
+    x += 1
+    print(f"Number is {x}")
+
+print("\n----------\n")
+
+num = 10
+while True:
+    if num == 20:
+        break
+    print("This is going to be repeated over and over and over...")

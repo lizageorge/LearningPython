@@ -4,6 +4,7 @@ A loop is a way to call on items in a list one at a time
 
 ## _For_ loops
 
+The *for* loop is the first kind of loop. 
 ```python
 student_names = ['Ann', 'Liza', 'George']
 
@@ -18,7 +19,7 @@ Here, we've made a list of "Student names", and a for loop that will print every
 
 ### The _Range_ Function
 
-By default, a loop with start in Index value 0 of a list, go till the end, an dhave a step/increment of 1. You can change this with the range function.
+By default, a loop will start in Index value 0 of a list, go till the end, an dhave a step/increment of 1. You can change this with the range function.
 \
 
 The Range function returns a list that can be iterated. It has three parameters; the minimum /starting index value, the maximum/ending index value, and the incrememnt/step. But the number of parameters you specify changes which parameter each of your values corresponds to.
@@ -44,7 +45,7 @@ If you don't specify any lists, thr function will work on a list of all whole nu
 
 ### The *Break* keywords
 
-The Break keyword is a way to stop a *for* loop from executing when a certain condition is met, and will instead exit it.
+The *Break* keyword is a way to stop a *for* loop from executing when a certain condition is met, and will instead exit it.
 
 Say we were going through a list of 0 - 10, looking for 5. If we just used a for loop (like shown below), the loop would continue to run even after finding 5.
 ```python
@@ -85,7 +86,7 @@ Found 5!
 
 ### The *Continue* keyword
 
-The Continue keyword is a way to skip a value in a list when a certain condition is met.
+The *Continue* keyword is a way to skip a value in a list when a certain condition is met.
 
 Say we're still working with that list of 0-10, but this time, we want all the value to printed *except* 5. To do this, we would insert the *continue* keyword as shown below. This wll make the computer skip whatever code is after the keyword in the loop, and move on to the next index.
 
@@ -109,3 +110,31 @@ for index in range(11):
 11
 
 Now we have a list of 0-10, skipping 5!
+
+## While Loops
+
+The *while* loop is the second kind of loop. It will let a section of code run over and over again, as long as a certain condition is met. The *Break*  and *Continue* keywords will work just like the do in *for* loops.
+
+For example, this loop will run on and on until x becomes greater than 10.
+
+```python
+x = 0
+while x < 10:              
+    x += 1
+    print(f"Number is {x}")
+```
+>Number is 0\
+Number is 1\
+...\
+Number is 8\
+Number is 9
+
+And this one is an example of an *Infinity Loop*; it will keep on running forever, unless we insert a break 
+
+```python
+num = 10
+while True:
+    if num == 20:
+        break
+    print("This is going to be repeated over and over and over...")
+```
