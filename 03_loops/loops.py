@@ -7,13 +7,8 @@ for name in student_names:
 
 print("\n----------\n")
 
-# use the range function to specify a range to iterate on
+# use the range function
 
-for index in range(10):
-    print(index)
-
-print("\n----------\n")
-
-for index in range(0, 21, 2):       # starting at 0 till < 21 and incr by 2
+for index in range(0, 11, 2):       # starting at 0 till 10 and increasing by 2
     print(index)
 
