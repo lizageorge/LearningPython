@@ -63,7 +63,7 @@ print(student.get("last_name", "Unknown"))
 
 >Unknown
 
-A note on the "get" function. This does the same thing as the square brackets we have been using so far. The square brackets are just an "operator" or "alias" for the get function, just like the plus sign is an operator for the "add" function. The only difference is that you can add more parameters with the get function, like we did above.
+A note on the *get* function. This does the same thing as the square brackets we have been using so far. The square brackets are just an "operator" or "alias" for the *get* function, just like the plus sign is an operator for the *add* function. The only difference is that you can add more parameters with the *get* function, like we did above.
 
 If you want to, you can call on all the keys or all the values in a dictionary with ".keys()" or ".values()"
 
