@@ -68,10 +68,7 @@ family = {
 }
 print(f"family = {family}")
 
-"I am {Liza}"
-
 print("I am " + family["children"][1]["child1"])
-"My brothers are Joe, Kunju and Manas"
 
 print("My brothers are " + family["children"][0]["child1"] + ", " + family["children"][0]["child2"] + ", and " +
       family["children"][2]["child1"])

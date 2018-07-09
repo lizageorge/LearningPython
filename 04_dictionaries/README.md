@@ -1,4 +1,4 @@
-#Dictionaries
+# Dictionaries
 
 Dictionaries are like lists, except they are used to store key-value-pairs. 
 
@@ -32,7 +32,8 @@ all_students = [
 
 ***
 
-##Calling on Values or Keys
+## Calling on Values or Keys
+
 To get to a value in a dictionary, use the key as you would an index in a list.
 
 ```python
@@ -91,6 +92,8 @@ print(student["name"])
 
 >KeyError: 'name'
 
+## Exercise wih Dictionaries and Lists
+
 Here, I  played around with dictionaries and lists. I listed out my dad's side of the family, and wrote code that was about my position in the family.
 
 ```python
@@ -119,10 +122,8 @@ family = {
 }
 print(f"family = {family}")
 
-"I am {Liza}"
 
 print("I am " + family["children"][1]["child1"])
-"My brothers are Joe, Kunju and Manas"
 
 print("My brothers are " + family["children"][0]["child1"] + ", " + family["children"][0]["child2"] + ", and " +
       family["children"][2]["child1"])
