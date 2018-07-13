@@ -3,7 +3,7 @@
 A function is a reusable block of code that you can use to avoid repetition and increase organization in your code. Basically, a function is a set of predetermined instructions that can take in and / or return values. Python comes with a bunch of preset functions, like `print()`, but you can make your own if you want.
 
 A function that you make has two parts - the header and the body. In the header, enter the `def` keyword, the name of your function, and a colon. The second part is the function body, below the header - this is where you can write your code.  If you want to include arguments / parameters for your function, write the function arguments in parenthesis after the name, as shown below. You can use these arguments in your function body like variables, and they will be inaccessible from the rest of your code, outside the function. Make sure that each function does only one thing. When using your function, use like a preset function - type out the name, and make sure you enter in the correct number of arguments in the right positions. Just to be clear, parameters are the values you enter while defining the function, and arguments are what you enter when using, or calling, the function.
-## Making your own Functions
+## Creating your own Functions
 ```python
 students = [
     {
@@ -98,3 +98,43 @@ my_print("yo", "hey", "there", True, None, 15, "Thanks for reading this stuff!")
 ('hey', 'there', True, None, 15, 'Thanks for reading this stuff!') 
 
 You can see how "yo", because of its position, is representing the parameter "value". If you want, you can have a function with just the  `*args` parameter on its own. You can also enter anything as the arguments here, like ints, strings, booleans, etc..
+
+
+---
+## The Input function
+
+A note on the `input` function - it allows the user of a console app to enter, or *input* their own values. Here's an example:
+
+```python
+user_name = input("Please enter *your* name here: ")
+print("The user's name is ", user_name)
+```
+
+>Please enter *your* name here:
+
+When I run the program above, that text shows on my console as a prompt. Once I enter in my name and hit enter, the rest of the code will run. I end up with something like this:
+
+>Please enter *your* name here: *Liza*\
+The user's name is  Liza
+
+---
+
+## Nested Functions
+
+If you want to have functions inside other functions, to reduce repetition, you can. Remember, you can't call the nested function from outside the nesting function. But if the nesting function has a variable or function, you can reach it from the nested function. For example;
+
+```python
+def nesting_function():
+    variable = "The example variable"
+
+    def nested_function_1():
+        print("The example function")
+
+    def nested_function_2():      # This is another example function
+        print("Here I can use", variable)
+        nested_function_1()
+        
+    nested_function_2()
+```
+>Here I can use The example variable\
+The example function

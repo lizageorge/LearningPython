@@ -46,3 +46,30 @@ def my_print(value, *args):
 
 
 my_print("yo", "hey", "there", True, None, 15, "Thanks for reading this stuff!")
+
+
+''' I'm commenting this out for convenience
+print("-------------------")
+
+user_name = input("Please enter *your* name here: ")
+print("The user's name is ", user_name)
+'''
+
+print("-------------------")
+
+
+def nesting_function():
+    variable = "The example variable"
+
+    def nested_function_1():
+        print("The example function")
+
+    def nested_function_2():      # This is another example function
+        print("Here I can use", variable)
+        nested_function_1()
+
+    nested_function_2()
+
+
+nesting_function()
+
