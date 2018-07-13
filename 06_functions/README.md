@@ -99,26 +99,6 @@ my_print("yo", "hey", "there", True, None, 15, "Thanks for reading this stuff!")
 
 You can see how "yo", because of its position, is representing the parameter "value". If you want, you can have a function with just the  `*args` parameter on its own. You can also enter anything as the arguments here, like ints, strings, booleans, etc..
 
-
----
-## The Input function
-
-A note on the `input` function - it allows the user of a console app to enter, or *input* their own values. Here's an example:
-
-```python
-user_name = input("Please enter *your* name here: ")
-print("The user's name is ", user_name)
-```
-
->Please enter *your* name here:
-
-When I run the program above, that text shows on my console as a prompt. Once I enter in my name and hit enter, the rest of the code will run. I end up with something like this:
-
->Please enter *your* name here: *Liza*\
-The user's name is  Liza
-
----
-
 ## Nested Functions
 
 If you want to have functions inside other functions, to reduce repetition, you can. Remember, you can't call the nested function from outside the nesting function. But if the nesting function has a variable or function, you can reach it from the nested function. For example;
