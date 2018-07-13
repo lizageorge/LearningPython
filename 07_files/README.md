@@ -2,7 +2,7 @@
 
 ## Opening, Reading, and Writing into Files
 
-When using the `open()` function to open files, write in the file name and the access mode. The access modes are "a" to append (or add text to the file), "r" to read, and "w" to write". There are more, but this is all I know so far. By the way, keep in mind that using the write mode erases everything that was previously in the file. There's also a `readLines()` function that will make a list of everything in a list, with what's in each line as an object.
+When using the `open()` function to open files, write in the file name and the access mode. The access modes are "a" to append (or add text to the file), "r" to read, and "w" to write". There are more, but this is all I know so far. By the way, keep in mind that using the write mode erases everything that was previously in the file. There's also a `readLines()` function that will return a list of everything in a list, with what's in each line as an object.
 
 ```python
 def save_student_into_file(student_name):

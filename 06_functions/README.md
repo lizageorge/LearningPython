@@ -40,7 +40,7 @@ print(students)
 So a quick breakdown of what I've done above. First, I made a list of dictionaries, each dictionary representing a student in a pretend classroom, with the keys of "name" and "age". Then I created the function `add_student` which has two arguments / parameters - name and age. I then wrote code that would create a new dictionary representing a student whenever the function was called. And then I tested out the function. You can see I printed out the student list, and the result included Mark, Emily and Joseph. Then I called on the `add_student` function, input the name and age I wanted, and when I printed the list a second time, Liza and her age was now in it. 
 
 
-A note on the `return` keyword. It does just that - it returns to you whatever data you have specified to be used again later on. The difference between `return` and `print` is that the print function doesn't store any data - if you tried setting a variable to the data of a function that only prints something, the variable wouldn't be holding anything. However, if the function *returns* something, you variable will now hold the result of whatever process you had in the function. Here's an example below:
+A note on the `return` keyword. It does just that - it returns to you whatever data you have specified to be used again later on. The difference between `return` and `print` is that the print function doesn't store any data - if you tried setting a variable to the data of a function that only prints something, the variable wouldn't be holding anything. However, if the function *returns* something, your variable will now hold the result of whatever process you had in the function. Here's an example below:
 
 ```python
 def add_these_two_numbers(number1, number2):
@@ -50,6 +50,16 @@ def add_these_two_numbers(number1, number2):
 print(add_these_two_numbers(2, 5))
 ```
 >7
+
+Also, when used in a function, the `return` statement leaves the function once the interpreter executes it. 
+
+```python
+def my_function():
+    print("Before return. This will be printed.")
+    return
+    print("After return. This won't be printed.")
+
+```
 
 ### Default Arguments
 
@@ -118,3 +128,41 @@ def nesting_function():
 ```
 >Here I can use The example variable\
 The example function
+
+
+---
+
+By the way, there's a subject I don't fully understand yet, but I noticed it and wanted to mention it here;
+
+This doesn't work, because foobar is defined below the call for foo().
+```python
+def foo():
+    print("foo")
+    bar()
+    foobar()
+    
+def bar():
+    print("bar")
+    
+foo()
+    
+def foobar():
+    print("foobar")
+```
+
+This does work, even though the definition of bar() and foobar() are underneath the definition of foo(), because everything is above the call for foo*().
+
+```python
+def foo():
+    print("foo")
+    bar()
+    foobar()
+    
+def bar():
+    print("bar")
+    
+def foobar():
+    print("foobar")
+    
+foo()
+```
