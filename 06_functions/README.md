@@ -166,3 +166,20 @@ def foobar():
     
 foo()
 ```
+
+## Lambda Functions
+
+Another way to create function, without the `def` keyword, for when you want to save a little bit of time and effort. They work when the function body would be really simple, a single line of code. Here's an example;
+
+This is a function I made that will just take an input and return that input doubled.
+```python
+def double(x):
+    return x * 2
+```
+
+Here, I'm making that same function, but using the `lambda` keyword. Notice how I don't need the `def` or `return` keywords here. 
+```python
+double = lambda x: x * 2
+```
+
+I would call on both of these functions the exact same way (`double(x)`).
